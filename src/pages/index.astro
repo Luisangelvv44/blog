@@ -9,40 +9,34 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			.portada {
+				margin-bottom: 5rem;
+				width: 100%;
+				background-color: #220404;
+				border-radius: 2rem;
+				text-align: center;
+				padding: 2rem 0
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<div class="portada">
+				<img src="/portada.jpg" alt="imagen de portada">
+			</div>
+			<h2>{SITE_DESCRIPTION}</h2>
 			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+				¡Hola a todos los amantes de la moda! Bienvenidos a nuestro vlog de bolsos de nuestra marca Kintsugi, 
+				donde exploramos los accesorios más sofisticados y deseados del mundo. Hoy vamos a sumergirnos en el 
+				fascinante universo de los bolsos de lujo de nuestra marca, esos íconos de estilo y elegancia que no 
+				solo complementan nuestros atuendos, sino que también cuentan una historia de artesanía y exclusividad.
 			</p>
 			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
+				Así que prepárense para descubrir las maravillas del diseño y la moda de Kintsugi, mientras desglosamos 
+				todo lo que necesitan saber sobre nuestros bolsos de lujo: historia, diseño, materiales y, por supuesto, 
+				cómo llevarlos con estilo. ¡No se lo pierdan!
 			</p>
 		</main>
 		<Footer />

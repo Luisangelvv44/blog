@@ -1,0 +1,93 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Catálogo"
+	description="Catalogo de productos"
+	pubDate={new Date('May 25 2024')}
+	heroImage="/portada_2.jpg"
+>
+	<h4>Bolsos impresionantes</h4>
+	<p>
+		Los bolsos de lujo son más que simples accesorios; son declaraciones de buen gusto y personalidad. 
+		Fabricados con los materiales más exquisitos, como el cuero de alta calidad, pieles exóticas, y telas 
+		finas, estos bolsos son el resultado de un meticuloso trabajo artesanal. Un aspecto que distingue a 
+		nuestros bolsos de lujo es su durabilidad y atención al detalle. Cada costura, hebilla y cierre es 
+		cuidadosamente diseñado y ensamblado, asegurando no solo una estética impecable, sino también una 
+		funcionalidad excepcional. Además, muchos de estos bolsos cuentan con detalles únicos, como grabados 
+		personalizados, bordados a mano, y hardware de alta gama, que los hacen aún más especiales y exclusivos.
+	</p>
+
+	<h4>Bolsos para todos</h4>
+	<div class="glide-1">
+		<div data-glide-el="track" class="glide__track">
+		  	<ul class="glide__slides">
+				<li class="glide__slide slide-width"><img src="/Cartera_1.jpg"></li>
+				<li class="glide__slide slide-width"><img src="/cartera_2.jpg"></li>
+				<li class="glide__slide slide-width"><img src="/Cartera_3.jpg"></li>
+				<li class="glide__slide slide-width"><img src="/Cartera_4.jpg"></li>
+				<li class="glide__slide slide-width"><img src="/Cartera_5.jpg"></li>
+				<li class="glide__slide slide-width"><img src="/Cartera_6.jpg"></li>
+		  	</ul>
+		</div>
+		<div class="glide__arrows" data-glide-el="controls">
+			<button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+			<button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+		</div>
+	</div>
+
+	<h4>Exclusividad a tu alcance</h4>
+	<div class="glide-2">
+		<div data-glide-el="track" class="glide__track">
+		  	<ul class="glide__slides">
+				<li class="glide__slide slide-width"><img src="/Cartera_7.jpg"></li>
+				<li class="glide__slide slide-width"><img src="/Cartera_8.jpg"></li>
+				<li class="glide__slide slide-width"><img src="/Cartera_9.jpg"></li>
+				<li class="glide__slide slide-width"><img src="/Cartera_10.jpg"></li>
+				<li class="glide__slide slide-width"><img src="/Cartera_11.jpg"></li>
+				<li class="glide__slide slide-width"><img src="/Cartera_12.jpg"></li>
+		  	</ul>
+		</div>
+		<div class="glide__arrows" data-glide-el="controls">
+			<button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+			<button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+		</div>
+	</div>
+
+	<p>
+		Y así llegamos al final de nuestro recorrido por el fascinante mundo de nuestros bolsos de lujo. Espero 
+		que hayan disfrutado de esta inmersión en la elegancia y el estilo, y que se hayan inspirado con los detalles 
+		de estas piezas icónicas. No olviden dejar sus comentarios y decirnos cuál fue su bolso favorito. Gracias por 
+		acompañarnos en esta aventura de moda y sofisticación. ¡Nos vemos en el próximo vlog, donde continuaremos 
+		explorando lo mejor del lujo y el diseño! ¡Hasta la próxima!
+	</p>
+</Layout>
+
+<style>
+	.glide-1, .glide-2{
+		position: relative;
+	}
+
+	button.glide__arrow {
+		background-color: rgba(255, 255, 255, 0.7);
+		color: black;
+	}
+</style>
+
+<script>
+	import Glide from '@glidejs/glide';
+
+	let slide1 = new Glide('.glide-1', {
+		type: 'carousel',
+		perView: 3
+	})
+
+	let slide2 = new Glide('.glide-2', {
+		type: 'carousel',
+		perView: 3
+	})
+
+	slide1.mount()
+	slide2.mount()
+</script>
